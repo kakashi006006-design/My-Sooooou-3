@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>لسو.. من قلبي 🌹</title>
+<link href="https://fonts.googleapis.com/css2?family=Aref+Ruqaa:wght@700&family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg1:#fff0f4;--bg2:#ffd9e4;--ink:#5a1f33;--soft:#8a4a5f;--card:rgba(255,255,255,.72);--accent:#e0446f;--accent2:#ff8fab;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg1:#2a0f1b;--bg2:#4a1730;--ink:#ffe3ec;--soft:#f3b6c8;--card:rgba(255,255,255,.08);--accent:#ff6b94;--accent2:#ff9db8;color-scheme:dark}}
+:root[data-theme="dark"]{--bg1:#2a0f1b;--bg2:#4a1730;--ink:#ffe3ec;--soft:#f3b6c8;--card:rgba(255,255,255,.08);--accent:#ff6b94;--accent2:#ff9db8;color-scheme:dark}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*{box-sizing:border-box}
+body{margin:0;min-height:100vh;font-family:'Tajawal',Tahoma,sans-serif;color:var(--ink);background:linear-gradient(160deg,var(--bg1),var(--bg2));background-attachment:fixed;overflow-x:hidden;text-align:center}
+h1,h2{font-family:'Aref Ruqaa','Amiri',serif;margin:0}
+section{max-width:720px;margin:0 auto;padding:44px 20px}
+.hero{padding-top:70px}
+.hero h1{font-size:clamp(2.2rem,8vw,3.6rem);color:var(--accent);line-height:1.4}
+.hero p{font-size:1.15rem;color:var(--soft);line-height:2;margin:14px 0 0}
+.big{font-size:4.2rem;display:inline-block;animation:sway 3s ease-in-out infinite;transform-origin:bottom center}
+@keyframes sway{50%{transform:rotate(6deg) scale(1.06)}}
+h2{font-size:1.8rem;color:var(--accent);margin-bottom:6px}
+.sub{color:var(--soft);margin:0 0 22px}
+.garden{display:grid;grid-template-columns:repeat(auto-fit,minmax(86px,1fr));gap:14px;max-width:520px;margin:0 auto}
+.fl{font-size:3rem;background:var(--card);border:1px solid rgba(224,68,111,.25);border-radius:24px;padding:14px 0;cursor:pointer;transition:transform .25s;backdrop-filter:blur(6px)}
+.fl:hover,.fl.on{transform:translateY(-6px) scale(1.08)}
+.fl.on{box-shadow:0 8px 24px rgba(224,68,111,.35)}
+.msg{min-height:110px;max-width:520px;margin:22px auto 0;background:var(--card);border-radius:22px;padding:22px;font-size:1.2rem;line-height:2;display:flex;align-items:center;justify-content:center;backdrop-filter:blur(6px);border:1px dashed var(--accent2)}
+.msg.pop{animation:pop .5s}
+@keyframes pop{from{opacity:0;transform:scale(.92)}}
+.breath{width:150px;height:150px;border-radius:50%;margin:10px auto 14px;background:radial-gradient(circle,var(--accent2),var(--accent));display:flex;align-items:center;justify-content:center;color:#fff;font-weight:700;font-size:1.2rem;animation:br 8s ease-in-out infinite;box-shadow:0 0 40px rgba(255,107,148,.5)}
+@keyframes br{0%,100%{transform:scale(.7)}50%{transform:scale(1.15)}}
+button.hug{font-family:inherit;font-size:1.2rem;font-weight:700;color:#fff;background:linear-gradient(135deg,var(--accent),var(--accent2));border:0;border-radius:40px;padding:14px 34px;cursor:pointer;box-shadow:0 8px 22px rgba(224,68,111,.4);transition:transform .2s}
+button.hug:active{transform:scale(.94)}
+.letter{background:var(--card);border-radius:26px;padding:28px 22px;line-height:2.1;font-size:1.15rem;backdrop-filter:blur(6px)}
+.sign{font-family:'Aref Ruqaa',serif;font-size:1.5rem;color:var(--accent);margin-top:12px}
+.fall{position:fixed;top:-40px;pointer-events:none;z-index:5;animation:fall linear forwards}
+@keyframes fall{to{transform:translateY(112vh) rotate(360deg)}}
+.heart{position:fixed;pointer-events:none;z-index:6;animation:up 2.2s ease-out forwards}
+@keyframes up{to{transform:translateY(-70vh) scale(1.6);opacity:0}}
+@media (prefers-reduced-motion:reduce){.big,.breath{animation:none}.fall{display:none}}
+</style>
+</head>
+<body>
+<section class="hero">
+  <div class="big">🌹</div>
+  <h1>سو.. يا أحلى ورده في حياتي</h1>
+  <p>الموقع ده اتعمل مخصوص عشانك يا حبيبتي،<br>عشان لو كنتي تعبانه النهارده، تحسي إن في حد بيحبك أوي وبيحاول يرسم ضحكتك 🤍</p>
+</section>
+
+<section>
+  <h2>جنينتك الصغيرة 🌷</h2>
+  <p class="sub">دوسي على أي وردة وشوفي إيه اللي مستخبي جواها</p>
+  <div class="garden" id="g"></div>
+  <div class="msg" id="m">اختاري وردة يا حبيبتي 💗</div>
+</section>
+
+<section>
+  <h2>خدي نفس معايا 🌿</h2>
+  <p class="sub">شهيق وإنتي بتكبري معاها.. وزفير وهي بتصغر</p>
+  <div class="breath" id="b">شهيق</div>
+</section>
+
+<section>
+  <h2>حضن من بعيد 🫂</h2>
+  <p class="sub">لو محتاجة حضن، دوسي ومش هسيبك</p>
+  <button class="hug" id="h">ابعتيلي حضن 💞</button>
+</section>
+
+<section>
+  <div class="letter">
+    حبيبتي وبطتي سو،<br>
+    عارف إن فيه أيام بتتقل على القلب وإنتي مش لازم تكوني قوية فيها.<br>
+    ارتاحي، وعيطي لو حبيتي، وفكري إني هنا دايمًا في ضهرك، بحبك على كل حالاتك مش بس وإنتي مبسوطة.<br>
+    إنتي وردتي اللي بتخلي الدنيا ألوان، وربنا يخليكي ليا ويفرّح قلبك دايمًا 🌸
+    <div class="sign">حبيبك يويوتك 🤍</div>
+  </div>
+</section>
+
+<script>
+const M=[["🌹","التعب ده مؤقت يا حبيبتي، وأنا معاكي في كل لحظة منه."],["🌷","ابتسامتك بتنوّر يومي كله، فابتسمي عشاني ولو شوية."],["🌸","ارتاحي النهارده يا بطتي، مفيش حاجة تستاهل تتعبك."],["🌻","إنتي أحلى حاجة حصلتلي، ومش هبطل أقولها."],["💐","لو أقدر أديكي كل الورد اللي في الدنيا كنت عملتها."],["🪻","خدي نفس عميق.. كل حاجة هتعدي بإذن الله."],["🌺","أنا فخور بيكي أوي، وبحبك أكتر مما تتخيلي."]];
+const g=document.getElementById('g'),m=document.getElementById('m');
+M.forEach(([e,t])=>{const b=document.createElement('div');b.className='fl';b.textContent=e;b.onclick=()=>{g.querySelectorAll('.fl').forEach(x=>x.classList.remove('on'));b.classList.add('on');m.textContent=t;m.classList.remove('pop');void m.offsetWidth;m.classList.add('pop');petals(6)};g.appendChild(b)});
+function petals(n){const P=['🌸','🌹','🌷','💗','🌺'];for(let i=0;i<n;i++){const s=document.createElement('span');s.className='fall';s.textContent=P[Math.random()*P.length|0];s.style.left=Math.random()*100+'vw';s.style.fontSize=(16+Math.random()*18)+'px';s.style.animationDuration=(6+Math.random()*6)+'s';document.body.appendChild(s);setTimeout(()=>s.remove(),13000)}}
+petals(14);setInterval(()=>petals(2),1800);
+const b=document.getElementById('b');let inh=true;setInterval(()=>{inh=!inh;b.textContent=inh?'شهيق':'زفير'},4000);
+document.getElementById('h').onclick=()=>{for(let i=0;i<18;i++){const s=document.createElement('span');s.className='heart';s.textContent=['💗','💞','🌹','🤍'][i%4];s.style.left=(10+Math.random()*80)+'vw';s.style.bottom='10vh';s.style.fontSize=(22+Math.random()*22)+'px';s.style.animationDelay=(Math.random()*.6)+'s';document.body.appendChild(s);setTimeout(()=>s.remove(),3200)}};
+</script>
+</body>
+</html>
